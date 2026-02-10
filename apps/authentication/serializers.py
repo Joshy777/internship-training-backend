@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate  # noqa: F401
 from .models import User
 
 
@@ -84,7 +84,8 @@ class LoginSerializer(serializers.Serializer):
         5. Return attrs
 
         Resources:
-        - Django authenticate: https://docs.djangoproject.com/en/5.0/topics/auth/default/#django.contrib.auth.authenticate
+        - Django authenticate:
+          https://docs.djangoproject.com/en/5.0/topics/auth/default/
         """
         # Your code here
         pass
