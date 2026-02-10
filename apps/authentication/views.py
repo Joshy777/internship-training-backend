@@ -1,9 +1,13 @@
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework import status  # noqa: F401
+from rest_framework.response import Response  # noqa: F401
 from rest_framework.views import APIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import LoginSerializer, UserSerializer, RegisterSerializer
+from rest_framework.permissions import AllowAny, IsAuthenticated  # noqa: F401
+from rest_framework_simplejwt.tokens import RefreshToken  # noqa: F401
+from .serializers import (  # noqa: F401
+    LoginSerializer,
+    UserSerializer,
+    RegisterSerializer,
+)
 
 
 class RegisterView(APIView):
